@@ -50,6 +50,21 @@ model = genai.GenerativeModel("gemini-1.5-flash")
 fruits = {
     "apple": {"name": "Apple", "description": "A sweet, crunchy fruit.", "image": "images/apple.jpg"},
     "banana": {"name": "Banana", "description": "A soft, yellow fruit.", "image": "images/banana.jpg"},
+    "strawberry": {
+    "name": "Strawberry",
+    "description": "A red, juicy fruit with tiny seeds on its surface.",
+    "image": "images/strawberry.jpg"
+  },
+  "kiwi": {
+    "name": "Kiwi",
+    "description": "A small, brown, fuzzy fruit with green flesh and tiny black seeds.",
+    "image": "images/kiwi.jpg"
+  },
+  "mango": {
+    "name": "Mango",
+    "description": "A tropical fruit with a sweet, juicy flesh and a large pit.",
+    "image": "images/mango.jpg"
+},
     # Add more fruits as needed
 }
 
