@@ -11,7 +11,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 
 # Configure CORS
-CORS(app, resources={r"/*": {"origins": ["https://fruits-ai-appreciate-wealth-theta.vercel.app/"]}})
+CORS(app, resources={r"/*": {"origins": ["https://fruits-ai-appreciate-wealth-theta.vercel.app"]}})
 
 @app.route('/test', methods=['GET'])
 def test():
