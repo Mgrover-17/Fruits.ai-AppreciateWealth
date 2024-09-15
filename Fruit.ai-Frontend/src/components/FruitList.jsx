@@ -13,7 +13,7 @@ const FruitList = () => {
   // Fetch fruits from API
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:5000/fruits")
+      .get("https://fruits-ai-appreciatewealth.onrender.com/fruits")
       .then((response) => {
         console.log(response)
         setFruits(Object.values(response.data));
@@ -39,7 +39,7 @@ const FruitList = () => {
     ]);
 
     axios
-      .post("http://127.0.0.1:5000/chat", {
+      .post("https://fruits-ai-appreciatewealth.onrender.com/chat", {
         message: userMessage,
         selectedFruit: selectedFruit ? selectedFruit.name : null,
       })

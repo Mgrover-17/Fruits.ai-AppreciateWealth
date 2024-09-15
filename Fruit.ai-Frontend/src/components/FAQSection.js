@@ -19,7 +19,7 @@ const FAQSection = () => {
   useEffect(() => {
     const fetchFaqs = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:5000/faqs");
+        const response = await fetch("https://fruits-ai-appreciatewealth.onrender.com/faqs");
         const data = await response.json();
         setFaqItems(data);
       } catch (error) {
@@ -38,7 +38,7 @@ const FAQSection = () => {
 
   const handleConfirmDelete = async () => {
     try {
-      const response = await fetch(`http://127.0.0.1:5000/faqs/${deleteId}`, {
+      const response = await fetch(`https://fruits-ai-appreciatewealth.onrender.com/faqs/${deleteId}`, {
         method: "DELETE",
       });
 
@@ -91,7 +91,7 @@ const FAQSection = () => {
 
     try {
       const response = await fetch(
-        `http://127.0.0.1:5000/faqs/${editItem._id}`,
+        `https://fruits-ai-appreciatewealth.onrender.com/faqs/${editItem._id}`,
         {
           method: "PUT",
           headers: { "Content-Type": "application/json" },
@@ -135,7 +135,7 @@ const FAQSection = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/faqs", {
+      const response = await fetch("https://fruits-ai-appreciatewealth.onrender.com/faqs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newItem),
